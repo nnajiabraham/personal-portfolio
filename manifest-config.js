@@ -1,8 +1,8 @@
 const theme = require('./src/theme');
 
 module.exports = {
-  name: 'Mate Gatsby Starter',
-  short_name: 'Mate Gatsby Starter',
+  name: 'Abraham\'s Portfolio',
+  short_name: 'Abraham\'s Portfolio',
   start_url: '/',
   background_color: theme.colors.background,
   theme_color: theme.colors.primary,

@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 import * as React from 'react';
+=======
+import React from 'react';
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
 import styled from 'styled-components';
 import { Section } from 'react-scroll-section';
 import { Heading } from 'rebass';
 import PropTypes from 'prop-types';
 import Slide from 'react-reveal/Slide';
+<<<<<<< HEAD
+=======
+import LinkAnimated from './LinkAnimated';
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
 
 const SectionContainer = styled.div`
   min-height: 100vh;
@@ -20,6 +28,7 @@ const SectionContainer = styled.div`
 
 const DefaultBackground = () => <div />;
 
+<<<<<<< HEAD
 const Container = ({
   id,
   children,
@@ -29,12 +38,19 @@ const Container = ({
   <Section id={id} style={{ position: 'relative' }}>
     <Background />
     <SectionContainer style={css}>{children}</SectionContainer>
+=======
+const Container = ({ id, children, Background = DefaultBackground }) => (
+  <Section id={id} style={{ position: 'relative' }}>
+    <Background />
+    <SectionContainer>{children}</SectionContainer>
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
   </Section>
 );
 
 Container.propTypes = {
   id: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+<<<<<<< HEAD
   // eslint-disable-next-line
   css: PropTypes.object,
   Background: PropTypes.func,
@@ -74,6 +90,15 @@ const Header = ({ name, icon = '', label = '' }) => (
   <Slide left>
     <Heading color="secondaryDark" mb={4}>
       <LinkAnimated borderWidth="5px">
+=======
+  Background: PropTypes.func,
+};
+
+const Header = ({ name, icon = '', label = '' }) => (
+  <Slide left>
+    <Heading color="secondaryDark" mb={4}>
+      <LinkAnimated selected>
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
         {name}
         {icon && (
           <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>

@@ -12,7 +12,11 @@
 
 The target audience are developers 💻 and tech writers ✍️.
 
+<<<<<<< HEAD
 ### [Demo Website](https://github.com/EmaSuriano/gatsby-starter-mate)
+=======
+### [Demo Website](https://gatsby-starter-mate.netlify.com/)
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
 
 ## Why? 🤔
 
@@ -25,7 +29,11 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 ## Features 🛠
 
 - [Gatsby v2](https://www.gatsbyjs.org/)
+<<<<<<< HEAD
 - [Rebass](https://rebassjs.org/): styled component system
+=======
+- [Rebass 3.0 🎉](https://rebassjs.org/): styled component system
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
 - [React Reveal](https://www.react-reveal.com/)
 - Dynamic content from [Contentful](https://contentful.com)
 - Offline support
@@ -117,10 +125,29 @@ Finished importing all data
 After this step we can finally run the project and see the result in http://localhost:8000/ 😃
 
 ```bash
+<<<<<<< HEAD
 yarn develop
 ```
 
 ![Landing mate page](./media/home.png)
+=======
+yarn start
+```
+
+## Screenshot and Design 🖼
+
+As the starter is a SPA it only has two routes:
+- `/`: main page with the sections of `Home`, `About me`, `Projects` and `Writing`.
+- `/404`: error page for unexpected route.
+
+| Section  |           Screenshot            |
+| -------- | :-----------------------------: |
+| Home     |     ![Home](media/home.png)     |
+| About me |  ![About me](media/about.png)   |
+| Projects | ![Projects](media/projects.png) |
+| Writing  |  ![Writing](media/writing.png)  |
+| /404     |      ![404](media/404.png)      |
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
 
 ## Building your site 📦
 

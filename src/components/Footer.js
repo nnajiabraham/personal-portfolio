@@ -48,7 +48,11 @@ const Footer = () => (
         <Text
           mb={2}
           pb={1}
+<<<<<<< HEAD
           css={{
+=======
+          style={{
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
             textTransform: 'uppercase',
             borderBottom: 'white 3px solid',
             display: 'table',

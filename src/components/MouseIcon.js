@@ -1,6 +1,10 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+<<<<<<< HEAD
 import { SectionLink } from 'react-scroll-section';
+=======
+import PropTypes from 'prop-types';
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
 
 const MouseContainer = styled.svg`
   max-width: 2.5rem;
@@ -51,6 +55,7 @@ const Scroll = styled.circle`
   fill: ${props => props.theme.colors.primary};
 `;
 
+<<<<<<< HEAD
 const MouseIcon = () => (
   <SectionLink section="about">
     {({ onClick }) => (
@@ -66,4 +71,21 @@ const MouseIcon = () => (
   </SectionLink>
 );
 
+=======
+const MouseIcon = ({ onClick }) => (
+  <ScrollLink onClick={onClick}>
+    <MouseContainer xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130">
+      <g fill="none">
+        <Mouse width="70" height="118" x="1.5" y="1.5" rx="36" />
+        <Scroll cx="36.5" cy="31.5" r="4.5" />
+      </g>
+    </MouseContainer>
+  </ScrollLink>
+);
+
+MouseIcon.propTypes = {
+  onClick: PropTypes.func,
+};
+
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
 export default MouseIcon;

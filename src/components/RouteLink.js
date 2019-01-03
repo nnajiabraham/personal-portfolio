@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Label } from 'rebass';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
@@ -46,6 +47,18 @@ const RouteLink = ({ onClick, selected, children }) => (
       {children}
     </LinkAnimated>
   </Label>
+=======
+import { Box } from 'rebass';
+import PropTypes from 'prop-types';
+import LinkAnimated from './LinkAnimated';
+
+const RouteLink = ({ onClick, selected, children }) => (
+  <Box ml={[2, 3]} color="background" fontSize={[2, 3]}>
+    <LinkAnimated onClick={onClick} selected={selected}>
+      {children}
+    </LinkAnimated>
+  </Box>
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
 );
 
 RouteLink.propTypes = {

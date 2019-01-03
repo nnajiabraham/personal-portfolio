@@ -3,10 +3,13 @@ import { SectionLink } from 'react-scroll-section';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+<<<<<<< HEAD
 const fixStyledComponent = StyledComponent => ({ children, ...props }) => (
   <StyledComponent {...props}>{children}</StyledComponent>
 );
 
+=======
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
 const StyledLink = styled.a`
   display: inline-block;
   transition: color 250ms, text-shadow 250ms;
@@ -62,7 +65,13 @@ const MarkdownLink = ({ href, children }) => {
       {({ onClick }) => <StyledLink onClick={onClick}>{children}</StyledLink>}
     </SectionLink>
   ) : (
+<<<<<<< HEAD
     <StyledLink href={href}>{children}</StyledLink>
+=======
+    <StyledLink href={href} target="_blank">
+      {children}
+    </StyledLink>
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715
   );
 };
 
@@ -71,6 +80,7 @@ MarkdownLink.propTypes = {
   children: PropTypes.node,
 };
 
+<<<<<<< HEAD
 const markdownRenderer = {
   paragraph: fixStyledComponent(MarkdownParagraph),
   list: fixStyledComponent(MarkdownList),
@@ -79,3 +89,11 @@ const markdownRenderer = {
 };
 
 export default markdownRenderer;
+=======
+export default {
+  paragraph: props => <MarkdownParagraph {...props} />,
+  list: props => <MarkdownList {...props} />,
+  listItem: props => <MarkdownListItem {...props} />,
+  link: MarkdownLink,
+};
+>>>>>>> 6fd4d2d31209c549aeca04e32cf567d4f5d8d715

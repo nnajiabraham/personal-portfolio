@@ -6,4 +6,4 @@ Credit to https://github.com/EmaSuriano/
 
 ## License 📝
 
-MIT.
+MIT

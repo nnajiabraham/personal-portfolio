@@ -1,5 +1,25 @@
 /* @import-normalize; */
 
+@font-face {
+  font-family: "RobotoCondensed";
+  font-weight: 400;
+  src: local("RobotoCondensed"),
+    url(./assets/fonts/RobotoCondensed-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  src: local("Oswald"), url(./assets/fonts/Oswald.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  font-weight: 800;
+  src: local("PlayfairDisplay"),
+    url(./assets/fonts/PlayfairDisplay.ttf) format("truetype");
+}
+
 body {
   margin: 0;
   padding: 0;

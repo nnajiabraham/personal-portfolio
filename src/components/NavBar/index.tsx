@@ -5,7 +5,7 @@ import CSSTypes from "../../Types";
 const styles: CSSTypes = {
   nav: {
     width: "100vw",
-    height: "5%",
+    height: "5vh",
     marginTop: 0,
   },
   ul: {
@@ -22,7 +22,8 @@ const styles: CSSTypes = {
   link: {
     fontSize: "18px",
     fontWeight: 500,
-    color: "#e4ff00",
+    fontFamily: "Oswald",
+    color: "rgb(133, 253, 153)",
     textDecoration: "none",
   },
 };
@@ -35,7 +36,7 @@ const NavBar: React.FC<{
       <ul style={styles.ul}>
         {routes.map((route, index) => (
           <li key={index} style={styles.li}>
-            {route.toLowerCase() === "home" ? (
+            {route.toLowerCase() === "About Me".toLowerCase() ? (
               <Link to="/" style={styles.link}>
                 {route}
               </Link>

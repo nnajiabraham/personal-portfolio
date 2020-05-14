@@ -3,19 +3,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import CSSTypes from "../Types";
 import About from "./About";
-import Contributions from "./Contributions";
-import Resume from "./Resume";
 
-const routes = ["Home", "About", "Contributions", "Resume"];
+const routes = ["About Me" /*,"Contributions", "Resume"*/];
 
 const styles: CSSTypes = {
   container: {
     display: "flex",
     flexDirection: "column",
-    height: "100vh",
+    maxHeight: "100vh",
   },
   mainContent: {
-    height: "95%",
+    height: "95vh",
   },
 };
 const App = () => {
@@ -28,12 +26,12 @@ const App = () => {
             <Route path="/" exact>
               <About />
             </Route>
-            <Route path="/contributions">
+            {/* <Route path="/contributions">
               <Contributions />
-            </Route>
-            <Route path="/resume">
+            </Route> */}
+            {/* <Route path="/resume">
               <Resume />
-            </Route>
+            </Route> */}
           </Switch>
         </main>
       </div>

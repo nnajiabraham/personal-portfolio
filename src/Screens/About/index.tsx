@@ -8,16 +8,17 @@ import CSSTypes from "../../Types";
 const styles: CSSTypes = {
   div: {
     display: "flex",
-    height: "100%",
+    maxHeight: "100%",
     color: "#fff",
     flexDirection: "column",
     justifyContent: "space-between",
     alignItems: "center",
+    minHeight: "100%",
   },
   mainContent: {
     display: "flex",
     fontFamily: "RobotoCondensed",
-    fontSize: "20px",
+    fontSize: "2vh",
     flexDirection: "column",
     justifyContent: "space-around",
     width: "75vw",
@@ -31,7 +32,7 @@ const styles: CSSTypes = {
     fontFamily: "PlayfairDisplay",
     fontSize: "9vw",
     textAlign: "center",
-    lineHeight: 1,
+    marginBottom: "0",
     width: "100%",
   },
   workLink: {

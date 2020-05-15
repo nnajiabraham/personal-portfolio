@@ -55,7 +55,9 @@ const About = () => {
       <div style={styles.mainContent}>
         <section>
           <h2 style={styles.h2}>About Me...</h2>
-          <p>I am full stack developer currently living in Winnipeg, Canada.</p>
+          <p>
+            I am a full stack developer currently living in Winnipeg, Canada.
+          </p>
           <p>
             I have been building web applications for over 6 years and have been
             doing so professionally for 3 years in Canada. I also contribute to

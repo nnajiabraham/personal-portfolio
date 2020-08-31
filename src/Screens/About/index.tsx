@@ -67,14 +67,14 @@ const About = () => {
           <p>
             I currently work as a FullStack Software Engineer at{" "}
             <a
-              href={"https://www.skipthedishes.com/about"}
+              href={"https://benevity.com/"}
               target={"_blank"}
               rel={"noopener noreferrer"}
               style={styles.workLink}
             >
-              {`SkipTheDishes `}
+              {`Benevity`}
             </a>
-            (Biggest Food Delivery Platform In Canada) .
+            .
           </p>
         </section>
         <section>

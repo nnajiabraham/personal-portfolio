@@ -67,12 +67,12 @@ const About = () => {
           <p>
             I currently work as a FullStack Software Engineer at{" "}
             <a
-              href={"https://benevity.com/"}
+              href={"https://biorender.com/"}
               target={"_blank"}
               rel={"noopener noreferrer"}
               style={styles.workLink}
             >
-              {`Benevity`}
+              {`Biorender`}
             </a>
             .
           </p>

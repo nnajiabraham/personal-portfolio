@@ -59,20 +59,19 @@ const About = () => {
 						I am a full stack developer currently living in Winnipeg, Canada.
 					</p>
 					<p>
-						I have been building web applications for over 6 years and have been
-						doing so professionally for 3 years in Canada. I also contribute to
+						I have been building web applications for over 6 years. I also contribute to
 						open source projects, tutor college CS students privately and work
 						on personal hack project on my free time.
 					</p>
 					<p>
-						I currently work as a FullStack Software Engineer at{" "}
+						I currently work as a Senior Software Engineer at{" "}
 						<a
-							href={"https://biorender.com/"}
+							href={"https://policyme.com/"}
 							target={"_blank"}
 							rel={"noopener noreferrer"}
 							style={styles.workLink}
 						>
-							{`Biorender`}
+							{PolicyMe}
 						</a>
 						.
 					</p>

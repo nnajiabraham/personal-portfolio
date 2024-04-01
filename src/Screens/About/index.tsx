@@ -56,7 +56,7 @@ const About = () => {
 				<section>
 					<h2 style={styles.h2}>About Me...</h2>
 					<p>
-						I am a full stack developer currently living in Winnipeg, Canada.
+						I am a Senior Software Developer based in BC, Canada.
 					</p>
 					<p>
 						I have been building web applications for over 6 years. I also contribute to
@@ -71,7 +71,7 @@ const About = () => {
 							rel={"noopener noreferrer"}
 							style={styles.workLink}
 						>
-							{PolicyMe}
+							PolicyMe
 						</a>
 						.
 					</p>

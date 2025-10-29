@@ -45,15 +45,16 @@
 - Global `ThemeProvider` (simple context or tokens) to centralize colors and spacing.
 
 ## Migration Approach
-1. Create new Vite project structure (`src/main.tsx`, `src/App.tsx`, `index.html`).
-2. Port content from current CRA components, adapting to new componentized sections.
-3. Replace inline styles with modular CSS (`.module.css`) or `styled` solution; leverage CSS variables for theme.
-4. Integrate fonts via `@fontsource` imports in `main.tsx`/global stylesheet.
-5. Install and use `lucide-react` icons for social actions.
-6. Configure ESLint + Prettier with TypeScript-aware rules.
-7. Set up Vitest, React Testing Library, and coverage thresholds.
-8. Remove unused CRA files/assets; reorganize assets folder for icons if needed.
-9. Update Netlify configuration (if necessary) to align with Vite build output (`npm run build` -> `dist`).
+1. Archive the current CRA implementation (including `src`, `public`, config files) after extracting all content/assets needed for the Vite rebuild, then prune legacy files so the repository only contains the new Vite scaffold and shared assets like this `plan.md`.
+2. Create new Vite project structure (`src/main.tsx`, `src/App.tsx`, `index.html`).
+3. Port content from current CRA components, adapting to new componentized sections.
+4. Replace inline styles with modular CSS (`.module.css`) or `styled` solution; leverage CSS variables for theme.
+5. Integrate fonts via `@fontsource` imports in `main.tsx`/global stylesheet.
+6. Install and use `lucide-react` icons for social actions.
+7. Configure ESLint + Prettier with TypeScript-aware rules.
+8. Set up Vitest, React Testing Library, and coverage thresholds.
+9. Ensure `package.json` retains Netlify-compatible scripts (`build`, `start`, `serve`) mapped to the new Vite commands so existing deployment automation keeps functioning.
+10. Update Netlify configuration (if necessary) to align with Vite build output (`npm run build` -> `dist`).
 
 ## Testing Strategy with Vitest
 - Create `vitest.config.ts` with JSX transform + alias resolution.
@@ -63,6 +64,10 @@
 - Add snapshot-style tests sparingly; prefer DOM queries.
 
 ## Checklist & Associated Tests
+- [ ] Remove legacy CRA scaffold and confirm repository only contains Vite-ready structure plus preserved assets/content.
+  - Tests to add:
+    - [ ] Confirm obsolete CRA-specific files (`src/index.tsx`, `public/index.html`, service worker) are removed after migration.
+    - [ ] Verify `package.json` retains Netlify-required scripts (`build`, `start`, `serve`) pointing to Vite commands.
 - [ ] Initialize Vite + React + TypeScript scaffold, migrate assets, and configure absolute imports.
   - Tests to add:
     - [ ] Ensure `App` renders without crashing and contains anchor sections (`getByRole('main')`).

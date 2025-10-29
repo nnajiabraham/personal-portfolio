@@ -1,33 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# nnajiabraham.com
 
-## Available Scripts
+A monospace, editor-inspired single page application built with [Vite](https://vite.dev/), [React](https://react.dev/), and TypeScript. The redesign keeps Abraham Nnaji’s original copy and colour palette while adopting a terminal-like layout inspired by [Ashley.dev](https://ashley.dev/). The site ships as a client-side SPA optimised for Netlify hosting.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- ⚡️ **Modern tooling** – Vite + React 19 with TypeScript, CSS Modules, and absolute imports via `@/`.
+- 🎨 **Monospace aesthetic** – IBM Plex Mono and Space Mono fonts with neon-accent theming that mirrors the legacy portfolio.
+- 🧭 **Accessible navigation** – Sticky desktop nav, mobile menu toggle, skip link, and semantic sections with anchor links.
+- 🧪 **Confidence via tests** – Vitest + Testing Library cover navigation, preserved copy, and theming tokens.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting started
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```bash
+npm install
+npm run dev
+```
 
-### `npm run build`
+Open [http://localhost:5173](http://localhost:5173) to develop locally.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Available scripts
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite dev server. |
+| `npm run build` | Type-check and build the production bundle to `dist/`. |
+| `npm run preview` | Preview the production build locally. |
+| `npm run start` | Alias of `npm run dev` for compatibility. |
+| `npm run serve` | Alias of `npm run preview -- --host` for Netlify-style previews. |
+| `npm run lint` | Run ESLint with accessibility, React, and Prettier alignment rules. |
+| `npm run format` | Check formatting with Prettier. |
+| `npm run format:write` | Auto-format source files with Prettier. |
+| `npm run test` | Run the Vitest test suite in watch mode. |
+| `npm run test:run` | Run the Vitest test suite once (CI friendly). |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Testing
 
-### `npm run eject`
+Vitest is configured with the JSDOM environment. To run the suite once in CI, use `npm run test:run`. Tests live in `src/__tests__` and focus on:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Rendering of anchor sections and navigation targets.
+- Preservation of the original “About” copy and PolicyMe link.
+- Presence of global design tokens and accessible contact links.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The Netlify build command should remain `npm run build` with the publish directory set to `dist`. Use `npm run serve` or `npm run preview` for local smoke tests before deploying.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Fonts & assets
+
+Fonts are provided via [`@fontsource`](https://fontsource.org/) packages for IBM Plex Mono and Space Mono. Icons use [`lucide-react`](https://lucide.dev/). All assets are bundled at build time by Vite.

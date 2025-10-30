@@ -61,7 +61,7 @@ export const heroContent: HeroContent = {
 export const aboutParagraphs = [
   'Senior Software Engineer focused on building and scaling high-performance web and cloud platforms.',
   'I combine hands-on architecture leadership with mentoring to deliver mission-critical systems and elevate developer experience.',
-  "Currently leading cross-functional initiatives at PolicyMe—modernizing payments, accessibility, and developer workflows while maintaining and scaling partner integrations across every product offering.",
+  "Currently leading cross-functional initiatives at PolicyMe—modernizing payments, accessibility, and developer workflows while onboarding new B2B2C partners onto our platform-as-a-service and scaling integrations across every product offering.",
   'I share knowledge through internal LLM sessions, guild projects, and collaborative tooling that keeps teams shipping with confidence.',
 ]
 
@@ -72,7 +72,7 @@ export const experienceEntries: ExperienceEntry[] = [
     period: 'Feb 2023 — Present',
     location: 'Toronto, ON (Remote)',
     highlights: [
-      'Directed the migration from a legacy payment provider to Stripe with near-zero downtime and streamlined financial workflows.',
+      'Owned the investigation, architecture, and implementation of the migration from a legacy payment provider to Stripe, delivering near-zero downtime and smoother financial operations.',
       'Re-architected pricing and storage into secure multi-tenant systems that power large-scale B2B2C insurance partnerships.',
       'Led accessibility, design system, and developer experience initiatives that improved velocity and onboarding across teams.',
     ],
@@ -117,7 +117,6 @@ export const highlightProjects: Highlight[] = [
     name: 'Stripe migration',
     description:
       'Led PolicyMe’s transition from a legacy processor to Stripe, delivering near-zero downtime and smoother financial operations.',
-    href: 'https://policyme.com/',
   },
   {
     name: 'Multi-tenant infrastructure',

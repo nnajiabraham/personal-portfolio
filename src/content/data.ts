@@ -41,7 +41,7 @@ export const heroContent: HeroContent = {
   role: 'Senior Software Engineer',
   location: 'Based in BC, Canada',
   tagline:
-    'I build thoughtful web experiences, ship resilient front-end systems, and mentor engineers to do their best work.',
+    'I build thoughtful web and cloud platforms, ship resilient end-to-end systems, and mentor engineers to do their best work.',
   actions: [
     {
       label: 'View GitHub',
@@ -61,7 +61,7 @@ export const heroContent: HeroContent = {
 export const aboutParagraphs = [
   'Senior Software Engineer focused on building and scaling high-performance web and cloud platforms.',
   'I combine hands-on architecture leadership with mentoring to deliver mission-critical systems and elevate developer experience.',
-  'Currently leading cross-functional initiatives at PolicyMe, modernizing payments, accessibility, and developer workflows.',
+  "Currently leading cross-functional initiatives at PolicyMe—modernizing payments, accessibility, and developer workflows while maintaining and scaling partner integrations across every product offering.",
   'I share knowledge through internal LLM sessions, guild projects, and collaborative tooling that keeps teams shipping with confidence.',
 ]
 

@@ -59,60 +59,80 @@ export const heroContent: HeroContent = {
 }
 
 export const aboutParagraphs = [
-  'I am a Senior Software Developer based in BC, Canada.',
-  'I have been building web applications for over 6 years. I also contribute to open source projects, tutor college CS students privately and work on personal hack project on my free time.',
-  'I currently work as a Senior Software Engineer at PolicyMe.',
-  "If you’re interested in my open source contributions or/and my personal projects take a look at my GitHub profile or follow me on Twitter. If you’re interested in my professional work you can connect with me on LinkedIn or shoot me an email.",
+  'Senior Software Engineer focused on building and scaling high-performance web and cloud platforms.',
+  'I combine hands-on architecture leadership with mentoring to deliver mission-critical systems and elevate developer experience.',
+  'Currently leading cross-functional initiatives at PolicyMe, modernizing payments, accessibility, and developer workflows.',
+  'I share knowledge through internal LLM sessions, guild projects, and collaborative tooling that keeps teams shipping with confidence.',
 ]
 
 export const experienceEntries: ExperienceEntry[] = [
   {
     company: 'PolicyMe',
     role: 'Senior Software Engineer',
-    period: '2022 — Present',
-    location: 'Toronto, Canada (remote)',
+    period: 'Feb 2023 — Present',
+    location: 'Toronto, ON (Remote)',
     highlights: [
-      'Lead front-end architecture for digital life insurance products.',
-      'Ship accessible, performant flows that help families get covered with confidence.',
+      'Directed the migration from a legacy payment provider to Stripe with near-zero downtime and streamlined financial workflows.',
+      'Re-architected pricing and storage into secure multi-tenant systems that power large-scale B2B2C insurance partnerships.',
+      'Led accessibility, design system, and developer experience initiatives that improved velocity and onboarding across teams.',
     ],
   },
   {
-    company: 'Open Source Community',
-    role: 'Contributor & Maintainer',
-    period: '2017 — Present',
+    company: 'BioRender (Science Suite Inc.)',
+    role: 'Full-Stack Software Engineer',
+    period: 'Jun 2021 — Feb 2023',
+    location: 'Toronto, ON (Remote)',
     highlights: [
-      'Collaborate on developer tooling and documentation improvements.',
-      'Provide thoughtful code reviews and mentor new contributors.',
+      'Redesigned the enterprise client admin panel for licensing and plan management.',
+      'Migrated core applications from Heroku to AWS via CDK with zero downtime.',
+      'Built observability dashboards and performance alerts to enhance reliability.',
     ],
   },
   {
-    company: 'Mentorship & Hack Projects',
-    role: 'Tutor & Builder',
-    period: 'Ongoing',
+    company: 'Benevity Inc.',
+    role: 'Full-Stack Software Engineer',
+    period: 'Jun 2020 — Jun 2021',
+    location: 'Victoria, BC (Remote)',
     highlights: [
-      'Tutor college CS students privately to help them grow confidence.',
-      'Prototype hack projects during personal time to explore new product ideas.',
+      'Developed PeerMatch features enabling peer-matched donations for enterprise clients.',
+      'Maintained performant REST APIs and AWS integrations for the donations platform.',
+      'Integrated monitoring tooling to uphold SLAs and operational reliability.',
+    ],
+  },
+  {
+    company: 'SkipTheDishes',
+    role: 'Full-Stack Software Engineer',
+    period: 'Feb 2018 — Jun 2020',
+    location: 'Winnipeg, MB',
+    highlights: [
+      'Built real-time metrics dashboards for operational management teams using Java, React, and Elasticsearch.',
+      'Implemented event-driven automations that coordinated live issue response across services and support teams.',
+      'Re-architected the client-facing web application with modular TypeScript, authentication failover, and CI/CD automation.',
     ],
   },
 ]
 
 export const highlightProjects: Highlight[] = [
   {
-    name: 'PolicyMe platform',
+    name: 'Stripe migration',
     description:
-      'Scaling the customer journey for life insurance — from quoting to purchase — with an emphasis on reliability and clarity.',
+      'Led PolicyMe’s transition from a legacy processor to Stripe, delivering near-zero downtime and smoother financial operations.',
     href: 'https://policyme.com/',
   },
   {
-    name: 'Community teaching',
+    name: 'Multi-tenant infrastructure',
     description:
-      'Mentoring emerging developers through private tutoring sessions focused on modern web practices.',
+      'Architected secure storage and pricing systems that unlocked large-scale B2B2C insurance partnerships.',
   },
   {
-    name: 'Open source experiments',
+    name: 'Accessibility & design systems',
     description:
-      'Sharing personal hack projects and contributions that push interface polish and accessibility forward.',
-    href: 'https://github.com/nnajiabraham?tab=repositories',
+      'Spearheaded semantic testing, feature toggles, and UI automation that modernized the platform experience.',
+  },
+  {
+    name: 'Developer experience leadership',
+    description:
+      'Championed DevX guild projects and internal LLM sessions, cultivating a culture of experimentation and learning.',
   },
 ]
 

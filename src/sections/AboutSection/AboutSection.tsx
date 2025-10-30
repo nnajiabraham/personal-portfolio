@@ -8,7 +8,7 @@ export function AboutSection() {
   const [policyPrefix, policySuffix] = policyLine.split('PolicyMe')
 
   return (
-    <EditorPane id="about" title="about.mdx">
+    <EditorPane id="about" title="about.mdx" description="// experience overview">
       <ol className={styles.lines} aria-label="About Abraham Nnaji">
         {aboutParagraphs.map((paragraph, index) => {
           if (index === 2) {

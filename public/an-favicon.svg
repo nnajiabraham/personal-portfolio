@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Abraham Nnaji favicon</title>
+  <defs>
+    <style>
+      .circle { fill: #040b13; }
+      .text {
+        fill: #85fd99;
+        font-family: 'Space Mono', 'IBM Plex Mono', monospace;
+        font-size: 28px;
+        font-weight: 700;
+        dominant-baseline: middle;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+  <circle class="circle" cx="32" cy="32" r="28" />
+  <text class="text" x="32" y="35">AN</text>
+</svg>

@@ -1,32 +1,47 @@
-/* @import-normalize; */
-
-@font-face {
-  font-family: "RobotoCondensed";
-  font-weight: 400;
-  src: local("RobotoCondensed"),
-    url(./assets/fonts/RobotoCondensed-Regular.ttf) format("truetype");
+:root {
+  color-scheme: dark;
+  --color-background: #040b13;
+  --color-surface: #0e1622;
+  --color-surface-alt: #101826;
+  --color-border: rgba(230, 241, 255, 0.12);
+  --color-primary: #e6f1ff;
+  --color-accent: rgb(133, 253, 153);
+  --color-muted: rgba(230, 241, 255, 0.65);
+  --font-body: 'IBM Plex Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --font-heading: 'Space Mono', 'IBM Plex Mono', monospace;
+  --transition: 220ms ease;
+  --max-width: 1200px;
 }
 
-@font-face {
-  font-family: "Oswald";
-  font-weight: 500;
-  src: local("Oswald"), url(./assets/fonts/Oswald.ttf) format("truetype");
+* {
+  box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "PlayfairDisplay";
-  font-weight: 800;
-  src: local("PlayfairDisplay"),
-    url(./assets/fonts/PlayfairDisplay.ttf) format("truetype");
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #040b13;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, rgba(133, 253, 153, 0.08), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(133, 253, 153, 0.08), transparent 55%), var(--color-background);
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: min(100%, var(--max-width));
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
 }

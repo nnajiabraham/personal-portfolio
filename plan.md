@@ -64,43 +64,45 @@
 - Add snapshot-style tests sparingly; prefer DOM queries.
 
 ## Checklist & Associated Tests
-- [ ] Remove legacy CRA scaffold and confirm repository only contains Vite-ready structure plus preserved assets/content.
+- [x] Remove legacy CRA scaffold and confirm repository only contains Vite-ready structure plus preserved assets/content.
   - Tests to add:
-    - [ ] Confirm obsolete CRA-specific files (`src/index.tsx`, `public/index.html`, service worker) are removed after migration.
-    - [ ] Verify `package.json` retains Netlify-required scripts (`build`, `start`, `serve`) pointing to Vite commands.
-- [ ] Initialize Vite + React + TypeScript scaffold, migrate assets, and configure absolute imports.
+    - [x] Confirm obsolete CRA-specific files (`src/index.tsx`, `public/index.html`, service worker) are removed after migration.
+    - [x] Verify `package.json` retains Netlify-required scripts (`build`, `start`, `serve`) pointing to Vite commands.
+- [x] Initialize Vite + React + TypeScript scaffold, migrate assets, and configure absolute imports.
   - Tests to add:
-    - [ ] Ensure `App` renders without crashing and contains anchor sections (`getByRole('main')`).
-    - [ ] Verify global CSS variables for colors are applied (`getComputedStyle` via JSDOM). 
-- [ ] Implement sticky header/side navigation with smooth scroll anchors and mobile toggle.
+    - [x] Ensure `App` renders without crashing and contains anchor sections (`getByRole('main')`).
+    - [x] Verify global CSS variables for colors are applied (`getComputedStyle` via JSDOM).
+- [x] Implement sticky header/side navigation with smooth scroll anchors and mobile toggle.
   - Tests to add:
-    - [ ] Navigation renders all expected section links with correct `href` targets.
-    - [ ] Simulated click updates `location.hash` or triggers scroll callback.
-    - [ ] Mobile toggle button toggles `aria-expanded` state.
-- [ ] Build hero/about sections with monospace typography and preserved copy in code-pane styling.
+    - [x] Navigation renders all expected section links with correct `href` targets.
+    - [x] Simulated click updates `location.hash` or triggers scroll callback.
+    - [x] Mobile toggle button toggles `aria-expanded` state.
+- [x] Build hero/about sections with monospace typography and preserved copy in code-pane styling.
   - Tests to add:
-    - [ ] Hero renders full name, role, and CTA buttons with lucide icons.
-    - [ ] About section retains PolicyMe link with correct URL and accent class.
-    - [ ] Snapshot test (or DOM assertion) ensuring paragraphs match original text content.
-- [ ] Create experience/projects pseudo-code section with data-driven content.
+    - [x] Hero renders full name, role, and CTA buttons with lucide icons.
+    - [x] About section retains PolicyMe link with correct URL and accent class.
+    - [x] Snapshot test (or DOM assertion) ensuring paragraphs match original text content.
+- [x] Create experience/projects pseudo-code section with data-driven content.
   - Tests to add:
-    - [ ] Renders interface headers and entries derived from JSON data.
-    - [ ] Each role entry exposes company name and role text.
-    - [ ] Ensure section supports keyboard navigation (e.g., headings are focusable anchors).
-- [ ] Assemble contact/social footer inspired by Ashley.dev with lucide icons and accessible labels.
+    - [x] Renders interface headers and entries derived from JSON data.
+    - [x] Each role entry exposes company name and role text.
+    - [x] Ensure section supports keyboard navigation (e.g., headings are focusable anchors).
+- [x] Assemble contact/social footer inspired by Ashley.dev with lucide icons and accessible labels.
   - Tests to add:
-    - [ ] Social buttons render with `aria-label` and correct `href` values (GitHub, LinkedIn, Medium, Twitter, Email).
-    - [ ] Footer text references React + Vite build stack.
-    - [ ] Validate icons have focus outlines visible via CSS class.
-- [ ] Configure CI-ready scripts (format, lint, test) and update documentation (README deployment notes, font usage).
+    - [x] Social buttons render with `aria-label` and correct `href` values (GitHub, LinkedIn, Medium, Twitter, Email).
+    - [x] Footer text references React + Vite build stack.
+    - [x] Validate icons have focus outlines visible via CSS class.
+- [x] Configure CI-ready scripts (format, lint, test) and update documentation (README deployment notes, font usage).
   - Tests to add:
-    - [ ] Lint script executes (can be validated via CI pipeline).
-    - [ ] `npm run build` passes using Vite (integration test/CI check).
-    - [ ] README contains updated commands (link check or unit test verifying presence of sections if desired).
+    - [x] Lint script executes (can be validated via CI pipeline).
+    - [x] `npm run build` passes using Vite (integration test/CI check).
+    - [x] README contains updated commands (link check or unit test verifying presence of sections if desired).
 
 ## Deliverables
 - Reorganized codebase under Vite with modular components.
 - Updated styling assets (CSS Modules, fonts, icons) aligned with Ashley-inspired monospace aesthetic.
 - Vitest + RTL test suite covering navigation, content rendering, and accessibility-critical behaviors.
 - Documentation updates (`README`, `plan.md` progress tracking) and Netlify build command adjustments (`npm run build` -> `vite build`).
+
+**Status:** Completed ✅
 

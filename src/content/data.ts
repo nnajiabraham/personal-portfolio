@@ -41,7 +41,7 @@ export const heroContent: HeroContent = {
   role: 'Senior Software Engineer',
   location: 'Based in BC, Canada',
   tagline:
-    'I build thoughtful web and cloud platforms, ship resilient end-to-end systems, and mentor engineers to do their best work.',
+    'I build thoughtful web and cloud platforms, ship resilient user experiences and backend services, and mentor engineers to do their best work.',
   actions: [
     {
       label: 'View GitHub',

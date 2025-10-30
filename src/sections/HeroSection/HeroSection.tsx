@@ -10,7 +10,7 @@ export function HeroSection() {
   const declaration = `const hello = () => ${openingBrace}`
 
   return (
-    <EditorPane id="hero" title="hero.tsx" description="// terminal inspired introduction">
+    <EditorPane id="hero" title="hero.tsx">
       <header className={styles.header}>
         <p className={styles.greeting}>{declaration}</p>
         <h1 className={styles.name}>{heroContent.name}</h1>

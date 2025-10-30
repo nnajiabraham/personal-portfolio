@@ -31,7 +31,6 @@ function App() {
         <div className={styles.identity}>
           <span className={styles.identityLabel}>Abraham Nnaji</span>
           <p className={styles.identityRole}>Senior Software Engineer</p>
-          <p className={styles.identityMeta}>Monospace web, neon green heart.</p>
         </div>
         <button
           type="button"

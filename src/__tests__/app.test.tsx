@@ -114,9 +114,13 @@ describe('App shell', () => {
     expect(cssText).toContain('--color-accent: rgb(133, 253, 153)')
   })
 
-  it('includes footer technology credits', () => {
+  it('renders copyright footer', () => {
     render(<App />)
-    const footerText = screen.getAllByText(/Built with/i)
-    expect(footerText.some((node) => node.textContent?.includes('React + Vite'))).toBe(true)
+    const currentYear = new Date().getFullYear().toString()
+    const footerNodes = screen.getAllByText(/@copyright/i)
+    expect(footerNodes.length).toBeGreaterThan(0)
+    footerNodes.forEach((node) => {
+      expect(node).toHaveTextContent(currentYear)
+    })
   })
 })
